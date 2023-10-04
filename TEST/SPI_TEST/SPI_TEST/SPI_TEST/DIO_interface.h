@@ -1,7 +1,6 @@
 #ifndef DIO_INTERFACE_H
 #define DIO_INTERFACE_H
-#include "DIO_interface.h"
-#include "STD_TYPES.h"
+
 typedef enum{
 	GPIOA,
 	GPIOB,
@@ -44,6 +43,6 @@ void DIO_vidWritePort(_enuPORTx enuPORT,u8 character);
 
 void DIO_vidSetLowNibbleMode(_enuPORTx enuPortNum, _enuMode enuMODE);
 void DIO_vidSetHighNibbleMode(_enuPORTx enuPortNum, _enuMode enuMODE);
-void DIO_vidWriteLowNibble(_enuPORTx enuPortNum, _enuOutputMode enuOutputMode);
-void DIO_vidWriteHighNibble(_enuPORTx enuPortNum, _enuOutputMode enuOutputMode);
+void DIO_vidWriteLowNibble(_enuPORTx enuPortNum, u8 _enuOutputMode);
+void DIO_vidWriteHighNibble(_enuPORTx enuPortNum, u8 _enuOutputMode);
 #endif
